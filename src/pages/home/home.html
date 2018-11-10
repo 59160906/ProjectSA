@@ -23,7 +23,11 @@
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block (click)="room(id,password);">Sign In</button>
+    <button ion-button color="primary" block (click)="room();">Sign In</button>
   </div>
 
+  <button  ion-button color="light" icon-end (click)="regis();">
+    Register
+    <ion-icon name='arrow-forward'></ion-icon>
+  </button>
 </ion-content>

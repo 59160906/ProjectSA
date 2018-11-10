@@ -1,0 +1,91 @@
+<!--
+  Generated template for the BookPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        book
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label>ชื่อ :</ion-label>
+        <ion-input type="text" value="" id="name"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label>วัน/เดือน/ปี ที่เรื่มจอง:</ion-label>
+          <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month" id="date"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-label>เวลาเริ่ม :</ion-label>
+            <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts" id="timeStarts"></ion-datetime>
+          </ion-item>
+          
+          <ion-item>
+              <ion-label>เวลาสิ้นสุด :</ion-label>
+              <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeEnds" id="timeEnds"></ion-datetime>
+            </ion-item>
+            
+            <ion-item>
+                <ion-label>ห้อง</ion-label>
+                <ion-select [(ngModel)]="room" id="room">
+                  <ion-option value="if">IF-3C01 </ion-option>
+                  <ion-option value="f">IF-3C02 </ion-option>
+                  <ion-option value="f">IF-3C03 </ion-option>
+                  <ion-option value="f">IF-3C04 </ion-option>
+                  <ion-option value="f">IF-4C01 </ion-option>
+                  <ion-option value="f">IF-4C02 </ion-option>
+                  <ion-option value="f">IF-4C03 </ion-option>
+                  <ion-option value="f">IF-4C04 </ion-option>
+                  <ion-option value="f">IF-5T01 </ion-option>
+                  <ion-option value="f">IF-5T02 </ion-option>
+                  <ion-option value="f">IF-5T03 </ion-option>
+                  <ion-option value="f">IF-5T04 </ion-option>
+                  <ion-option value="f">IF-5T05 </ion-option>
+                  <ion-option value="f">IF-6T01 </ion-option>
+                  <ion-option value="f">IF-6T02 </ion-option>
+                  <ion-option value="f">IF-6T03 </ion-option>
+                  <ion-option value="f">IF-6T04 </ion-option>
+                  <ion-option value="f">IF-6T05	</ion-option>
+                  <ion-option value="f">IF-11M280 </ion-option>
+                </ion-select>
+              </ion-item>
+            <ion-item>
+                <ion-label>คณะ</ion-label>
+                <ion-select [(ngModel)]="mejer" id="mejer">
+                  <ion-option value="if">วิทยาการสารสนเทศ</ion-option>
+                  <ion-option value="f">คณะโลจิสติกส์</ion-option>
+                  <ion-option value="f">คณะวิทยาศาสตร์การกีฬา</ion-option>
+                  <ion-option value="f">คณะการแพทย์แผนไทยอภัยภูเบศร</ion-option>
+                  <ion-option value="f">คณะการจัดการและการท่องเที่ยว</ion-option>
+                  <ion-option value="f">คณะสหเวชศาสตร์</ion-option>
+                  <ion-option value="f">คณะภูมิสารสนเทศศาสตร์</ion-option>
+                  <ion-option value="f">คณะเภสัชศาสตร์</ion-option>
+                  <ion-option value="f">วิทยาลัยการบริหารรัฐกิจ</ion-option>
+                  <ion-option value="f">วิทยาลัยพาณิชยศาสตร์</ion-option>
+                  <ion-option value="f">วิทยาลัยนานาชาติ</ion-option>
+                  <ion-option value="f">วิทยาลัยวิทยาการวิจัย</ion-option>
+                  <ion-option value="f">วิทยาการปัญญา</ion-option>
+                  <ion-option value="f">คณะรัฐศาสตร์และนิติศาสตร์</ion-option>
+                  <ion-option value="f">คณะแพทยศาสตร์</ion-option>
+                  <ion-option value="f">คณะสาธารณสุขศาสตร์</ion-option>
+                  <ion-option value="f">คณะศิลปกรรมศาสตร์</ion-option>
+                  <ion-option value="f">คณะวิศวกรรมศาสตร์	</ion-option>
+                  <ion-option value="f">คณะศึกษาศาสตร์</ion-option>
+                  <ion-option value="f">คณะวิทยาศาสตร์</ion-option>
+                  <ion-option value="f">คณะมนุษยศาสตร์และสังคมศาสตร์</ion-option>
+                  <ion-option value="f">คณะพยาบาลศาสตร์</ion-option>
+                </ion-select>
+              </ion-item>
+              
+
+  </ion-list> 
+  <button ion-button (click)="book()">จอง</button>  <button ion-button (click)="cencel('Top')">ยกเลิก</button>  
+  </ion-content>

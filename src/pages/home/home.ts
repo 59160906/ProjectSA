@@ -8,9 +8,13 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-
+  
   }
   room(){
-    this.navCtrl.push("RoomPage");
+    this.navCtrl.setRoot("RoomPage");
   }
+  regis(){
+    this.navCtrl.push("TypPage");
+  }
+  
 }

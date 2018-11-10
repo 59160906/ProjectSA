@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the RoomPage page.
+ * Generated class for the TypPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,28 +10,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-room',
-  templateUrl: 'room.html',
+  selector: 'page-typ',
+  templateUrl: 'typ.html',
 })
-export class RoomPage {
+export class TypPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RoomPage');
+    console.log('ionViewDidLoad TypPage');
+  }
+  User(){
+    this.navCtrl.push("RegisterPage");
+  }
+  amin(){
+    this.navCtrl.push("RegisteraminPage");
   }
 
-  search(){
-    this.navCtrl.push("SearchPage");
-  }
-  description(){
-    this.navCtrl.push("DecriptionPage");
-  }
-  booking(){
-    this.navCtrl.push("BookingPage");
-  }
-  book(){
-    this.navCtrl.push("BookPage");
-  }
 }
